@@ -1,0 +1,1 @@
+Factory Entwurfsmuster: Simple Factory / Factory Method / Abstract Factory
