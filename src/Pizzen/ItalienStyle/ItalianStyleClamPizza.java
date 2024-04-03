@@ -6,11 +6,11 @@ public class ItalianStyleClamPizza extends IPizza
 {
     public ItalianStyleClamPizza()
     {
-        this.Description = "Pizza Clam - Italien Style";
-    }
+        this.setName("Pizza Venusmuscheln - Italien Style");
+        this.setDough("Teig für dünnen Boden");
+        this.setSauce("Marinarasoße");
 
-    public void prepare()
-    {
-
+        this.addTopping("Venusmuscheln");
+        this.addTopping("Parmesan gehobelt");
     }
 }

@@ -6,11 +6,11 @@ public class GermanStyleWuerstelPizza extends IPizza
 {
     public GermanStyleWuerstelPizza()
     {
-        this.Description = "Pizza Würstel - German Style";
-    }
+        this.setName("Pizza Würstel - German Style");
+        this.setDough("Teig für dicken Boden");
+        this.setSauce("Datteltomatensoße");
 
-    public void prepare()
-    {
-
+        this.addTopping("Wiener-Würstchen in Scheiben");
+        this.addTopping("Geriebener Emmentaler");
     }
 }

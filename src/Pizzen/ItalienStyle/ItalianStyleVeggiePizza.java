@@ -6,11 +6,14 @@ public class ItalianStyleVeggiePizza extends IPizza
 {
     public ItalianStyleVeggiePizza()
     {
-        this.Description = "Pizza Veggie - Italien Style";
-    }
+        this.setName("Pizza Vegetarisch - Italien Style");
+        this.setDough("Teig für dünnen Boden");
+        this.setSauce("Marinarasoße");
 
-    public void prepare()
-    {
-
+        this.addTopping("Pepperoni scharf in Scheiben");
+        this.addTopping("Artischoken");
+        this.addTopping("Oliven");
+        this.addTopping("Paprika");
+        this.addTopping("Mozarella in Scheiben");
     }
 }

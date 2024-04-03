@@ -6,11 +6,12 @@ public class GermanStyleHawaiiPizza extends IPizza
 {
     public GermanStyleHawaiiPizza()
     {
-        this.Description = "Pizza Hawaii  - German Style";
-    }
+        this.setName("Pizza Hawaii - German Style");
+        this.setDough("Teig für dicken Boden");
+        this.setSauce("Datteltomatensoße");
 
-    public void prepare()
-    {
-
+        this.addTopping("Ananas in Stücken");
+        this.addTopping("Schinken");
+        this.addTopping("Geriebener Emmentaler");
     }
 }

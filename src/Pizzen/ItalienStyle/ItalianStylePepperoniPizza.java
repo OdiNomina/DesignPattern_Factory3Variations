@@ -6,11 +6,12 @@ public class ItalianStylePepperoniPizza extends IPizza
 {
     public ItalianStylePepperoniPizza()
     {
-        this.Description = "Pizza Pepperoni - Italien Style";
-    }
+        this.setName("Pizza Pepperoni - Italien Style");
+        this.setDough("Teig für dünnen Boden");
+        this.setSauce("Marinarasoße");
 
-    public void prepare()
-    {
-
+        this.addTopping("Pepperoni scharf in Scheiben");
+        this.addTopping("Salami");
+        this.addTopping("Mozarella in Scheiben");
     }
 }

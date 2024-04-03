@@ -6,11 +6,11 @@ public class GermanStyleBolognesePizza extends IPizza
 {
     public GermanStyleBolognesePizza()
     {
-        this.Description = "Pizza Bolognese - German Style";
-    }
+        this.setName("Pizza Bolognese - German Style");
+        this.setDough("Teig für dicken Boden");
+        this.setSauce("Bolognesesoße");
 
-    public void prepare()
-    {
-
+        this.addTopping("Frische Champions in Scheiben");
+        this.addTopping("Geriebener Parmesan");
     }
 }

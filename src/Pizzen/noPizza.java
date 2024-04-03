@@ -4,7 +4,7 @@ public class noPizza extends IPizza
 {
     public noPizza()
     {
-        this.Description = "noPizza";
+        this.setName("noPizza");
     }
 
     public void prepare()

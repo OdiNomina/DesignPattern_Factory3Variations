@@ -2,15 +2,18 @@ package Pizzen.ItalienStyle;
 
 import Pizzen.IPizza;
 
+// Concrete product
 public class ItalianStyleCheesePizza extends IPizza
 {
     public ItalianStyleCheesePizza()
     {
-        this.Description = "Pizza Cheese - Italien Style";
-    }
+        this.setName("Pizza vier Käsesorten - Italien Style");
+        this.setDough("Teig für dünnen Boden");
+        this.setSauce("Marinarasoße");
 
-    public void prepare()
-    {
-
+        this.addTopping("Mozarella in Scheiben");
+        this.addTopping("Parmesan gehobelt");
+        this.addTopping("Ziegencamembert in Scheiben");
+        this.addTopping("Pecorino gehobelt");
     }
 }
