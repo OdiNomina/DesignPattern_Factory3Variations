@@ -1,14 +1,15 @@
-package Factories;
+package SimpleFactories;
 
-import Pizzen.*;
+import Pizzen.IPizza;
+import Pizzen.noPizza;
 import Pizzen.ItalienStyle.*;
 
 // Nur die konkreten Fabriken beziehen sich auf konkrete Klassen!
-public class ItalianFactory implements SimpleFactory
+public class SimpleItalianFactory implements ISimpleFactory
 {
-    public Pizza createPizza(String type)
+    public IPizza createPizza(String type)
     {
-        Pizza pizza = new noPizza();
+        IPizza pizza = new noPizza();
 
         if (type.equalsIgnoreCase("cheese"))
             pizza = new ItalianStyleCheesePizza();

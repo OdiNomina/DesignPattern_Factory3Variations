@@ -1,6 +1,6 @@
 package Pizzen;
 
-public class noPizza extends Pizza
+public class noPizza extends IPizza
 {
     public noPizza()
     {

@@ -1,6 +1,6 @@
 package Pizzen;
 
-public abstract class Pizza
+public abstract class IPizza
 {
     public String Description;
     public abstract void prepare();

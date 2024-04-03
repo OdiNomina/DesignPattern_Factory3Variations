@@ -1,9 +1,14 @@
 package Pizzen.ItalienStyle;
 
-import Pizzen.Pizza;
+import Pizzen.IPizza;
 
-public class ItalianStylePepperoniPizza extends Pizza
+public class ItalianStylePepperoniPizza extends IPizza
 {
+    public ItalianStylePepperoniPizza()
+    {
+        this.Description = "Pizza Pepperoni - Italien Style";
+    }
+
     public void prepare()
     {
 

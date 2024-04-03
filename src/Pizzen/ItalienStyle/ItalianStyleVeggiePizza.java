@@ -1,12 +1,12 @@
 package Pizzen.ItalienStyle;
 
-import Pizzen.Pizza;
+import Pizzen.IPizza;
 
-public class ItalianStyleVeggiePizza extends Pizza
+public class ItalianStyleVeggiePizza extends IPizza
 {
     public ItalianStyleVeggiePizza()
     {
-        this.Description = "Pizza Veggie";
+        this.Description = "Pizza Veggie - Italien Style";
     }
 
     public void prepare()
