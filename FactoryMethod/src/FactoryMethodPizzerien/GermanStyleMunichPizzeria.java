@@ -7,9 +7,9 @@ import Pizzen.noPizza;
 // Concrete creator
 public class GermanStyleMunichPizzeria extends IFactoryMethodPizzeria
 {
-    public IPizza createPizza(String type)
+    protected IPizza createPizza(String type)
     {
-        IPizza pizza = new noPizza();
+        IPizza pizza;
 
         if (type.equalsIgnoreCase("hawaii"))
             pizza = new GermanStyleHawaiiPizza();
@@ -19,6 +19,8 @@ public class GermanStyleMunichPizzeria extends IFactoryMethodPizzeria
             pizza = new GermanStyleBolognesePizza();
         else if (type.equalsIgnoreCase("würstel"))
             pizza = new GermanStyleWuerstelPizza();
+        else
+            pizza = new noPizza();
 
         return pizza;
     }

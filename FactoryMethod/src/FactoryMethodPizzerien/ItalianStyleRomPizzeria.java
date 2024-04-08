@@ -7,9 +7,9 @@ import Pizzen.ItalienStyle.*;
 // Concrete creator
 public class ItalianStyleRomPizzeria extends IFactoryMethodPizzeria
 {
-    public IPizza createPizza(String type)
+    protected IPizza createPizza(String type)
     {
-        IPizza pizza = new noPizza();
+        IPizza pizza;
 
         if (type.equalsIgnoreCase("cheese"))
             pizza = new ItalianStyleCheesePizza();
@@ -19,6 +19,8 @@ public class ItalianStyleRomPizzeria extends IFactoryMethodPizzeria
             pizza = new ItalianStyleClamPizza();
         else if (type.equalsIgnoreCase("veggie"))
             pizza = new ItalianStyleVeggiePizza();
+        else
+            pizza = new noPizza();
 
         return pizza;
     }
