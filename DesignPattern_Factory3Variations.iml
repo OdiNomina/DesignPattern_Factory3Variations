@@ -8,9 +8,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="module" module-name="SimpleFactory" />
-    <orderEntry type="module" module-name="FactoryMethod" />
-    <orderEntry type="module" module-name="AbstractFactory" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
